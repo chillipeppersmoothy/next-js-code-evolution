@@ -1,3 +1,5 @@
+import Footer from "../components/footer";
+import Header from "../components/header";
 import "./globals.css";
 import { Metadata } from "next";
 
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
