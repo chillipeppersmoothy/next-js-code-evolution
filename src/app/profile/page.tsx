@@ -1,3 +1,8 @@
-export default function Profile() {
-  return <h1>Profile</h1>;
+export default async function Profile({
+  searchParams,
+}: {
+  searchParams: Promise<{ id?: string }>;
+}) {
+  const { id } = await searchParams;
+  return <h1>Profile {id}</h1>;
 }

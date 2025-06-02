@@ -18,15 +18,15 @@ export default function AuthLayout({
   const pathname = usePathname();
   return (
     <div>
-      <div>
+      <div className="mb-4 p-2">
         {navLinks.map((data) => {
           const isActive = pathname === data.href && data.href !== "/";
           return (
             <Link
-              style={{
-                color: `${isActive ? "red" : "black"}`,
-                marginRight: "15px",
-              }}
+              className={
+                (isActive ? "font-bold text-blue" : "text-black") +
+                " mr-4 p-2 bg-amber-300 hover:bg-amber-500"
+              }
               key={data.name}
               href={data.href}
             >
