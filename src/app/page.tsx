@@ -16,13 +16,40 @@ export default function Home() {
           </Link>
         </li>
         <li>
-          <Link href="/counter?id=1" className="underline text-blue-600">
+          <Link
+            href="/complex-dashboard"
+            className="underline text-blue-600"
+            replace
+          >
+            Complex Dashboard
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/counter?id=1&lang=en"
+            className="underline text-blue-600"
+          >
             Counter
+          </Link>
+        </li>
+        <li>
+          <Link href="/photo-feed" className="underline text-blue-600">
+            Photo Feed
           </Link>
         </li>
         <li>
           <Link href="/v1" className="underline text-blue-600">
             Auth
+          </Link>
+        </li>
+        <li>
+          <Link href="/f1" className="underline text-blue-600">
+            F1
+          </Link>
+        </li>
+        <li>
+          <Link href="/error" className="underline text-blue-600">
+            Error
           </Link>
         </li>
       </ul>

@@ -1,8 +1,12 @@
-export default async function Profile({
+"use client";
+
+import { use } from "react";
+
+export default function Profile({
   searchParams,
 }: {
   searchParams: Promise<{ id?: string }>;
 }) {
-  const { id } = await searchParams;
+  const { id } = use(searchParams);
   return <h1>Profile {id}</h1>;
 }
