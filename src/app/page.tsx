@@ -48,6 +48,11 @@ export default function Home() {
           </Link>
         </li>
         <li>
+          <Link href="/test-api" className="underline text-blue-600">
+            API
+          </Link>
+        </li>
+        <li>
           <Link href="/error" className="underline text-blue-600">
             Error
           </Link>
