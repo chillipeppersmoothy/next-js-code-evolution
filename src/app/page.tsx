@@ -69,6 +69,11 @@ export default function Home() {
               Product Catalogue
             </Link>
           </li>
+          <li>
+            <Link href="/streaming" className="underline text-blue-500">
+              Streaming
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

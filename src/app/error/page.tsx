@@ -1,4 +1,6 @@
-export default async function ErrorPage() {
+"use client";
+
+export default function ErrorPage() {
   const getRandomNumber = () => {
     return Math.floor(Math.random() * 100);
   };
