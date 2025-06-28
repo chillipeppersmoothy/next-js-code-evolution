@@ -1,5 +1,6 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import ThemeProvider from "@/context/themeProvider";
 import "./globals.css";
 import { Metadata } from "next";
 
@@ -19,11 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <ThemeProvider>
+        <body>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

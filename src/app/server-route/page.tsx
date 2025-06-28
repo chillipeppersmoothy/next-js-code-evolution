@@ -3,6 +3,11 @@ import { ImageSlider } from "@/components/imageSlider";
 
 export default async function ServerRoutePage() {
   const result = serverSideFunction();
+
   console.log(result);
-  return <ImageSlider />;
+  return (
+    <div>
+      <ImageSlider />;
+    </div>
+  );
 }
