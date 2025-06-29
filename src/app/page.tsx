@@ -74,6 +74,36 @@ export default function Home() {
               Streaming
             </Link>
           </li>
+          <li>
+            <Link href="/server-route" className="underline text-blue-500">
+              Server Route
+            </Link>
+          </li>
+          <li>
+            <Link href="/client-route" className="underline text-blue-500">
+              Client Route
+            </Link>
+          </li>
+          <li>
+            <Link href="/interleaving-page" className="underline text-blue-500">
+              Interleaving Page
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="mt-4">
+        <h2 className="font-bold text-xl">Data Fetching</h2>
+        <ul>
+          <li>
+            <Link href="/user-client" className="underline text-blue-500">
+              User Client
+            </Link>
+          </li>
+          <li>
+            <Link href="/user-server" className="underline text-blue-500">
+              User Server
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
