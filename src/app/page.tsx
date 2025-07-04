@@ -26,7 +26,8 @@ const DataFetchingData = [
   { route: "/post-sequential", label: "Post Sequential" },
   { route: "/user-parallel/1", label: "User Parallel" },
   { route: "/products-db", label: "Products DB" },
-  { route: "/react-form", label: "React Form" },
+  { route: "/react-form", label: "React Form Client" },
+  { route: "/products-db-create", label: "React Form Server" },
 ];
 
 export default function Home() {
